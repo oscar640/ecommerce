@@ -1,0 +1,42 @@
+@use 'variables';
+@use 'initial';
+@use 'mixins';
+
+.main-container-pasarela{
+    border: 1px solid red;
+    width: 375px;
+    margin: auto;
+    
+    
+}
+.main-container__background-section{
+    background-image: url('/pasareladepago/images/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    height: 240px;
+    position: relative;
+}
+.main-container__form-section{
+    padding: 90px 24px 45px;
+}
+@media (min-width:1440px){
+    .main-container-pasarela{
+        width: 1440px;
+        display: flex;
+    }
+}
+@media (min-width:1440px){
+    .main-container__background-section{
+        background-image: url('/pasareladepago/images/bg-main-desktop.png');
+        width: 900px;
+        height: 900px;
+    }
+}
+.card{
+     @include mixins.card('/pasareladepago/images/bg-card-front.png');
+     @include mixins.card-position(126px, 18px, 187px, 167px);
+     z-index: 1;
+}
+.card-back{
+    @include mixins.card('/pasareladepago/images/bg-card-back.png');
+    @include mixins.card-position(30px, 75px, 468px, 257px);
+}

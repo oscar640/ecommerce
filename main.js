@@ -156,7 +156,7 @@ function drawProductInModal(){
             </div>
             <img class="cart-modal__delete" src="./ecommerce-product-page-main/images/icon-delete.svg" alt="delete">
         </div>
-        <button class="cart-modal__chekount" >Checkout</button>`;
+        <a href="pasareladepago/pasarela.html" class="cart-modal__chekount">Checkout</a>`;
     deleteProduct()
     let priceModal = document.querySelector('.cart-modal__price');
     priceModal.innerHTML = `$125 x${lastValue} <span>$${lastValue*125}.00</span>`;

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +6,10 @@
 }
 * .attribution {
   text-align: center;
-  background-color: orange;
 }
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  background-color: antiquewhite;
 }
 
 .header {
@@ -282,7 +279,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  text-decoration: none;
 }
 .details__button:hover {
   cursor: pointer;
@@ -394,7 +390,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  text-decoration: none;
 }
 .cart-modal__chekount:hover {
   cursor: pointer;
@@ -486,94 +481,6 @@ body {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.body-pasarela {
-  background-color: white;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
-}
-
-@media (min-width: 1440px) {
-  .card {
-    width: 450px;
-    height: 247;
-    padding: 38px;
-  }
-}
-.main-container-pasarela {
-  border: 1px solid red;
-  width: 375px;
-  margin: auto;
-}
-
-.main-container__background-section {
-  background-image: url("/pasareladepago/images/bg-main-mobile.png");
-  background-repeat: no-repeat;
-  height: 240px;
-  position: relative;
-}
-
-.main-container__form-section {
-  padding: 90px 24px 45px;
-}
-
-@media (min-width: 1440px) {
-  .main-container-pasarela {
-    width: 1440px;
-    display: flex;
-  }
-}
-@media (min-width: 1440px) {
-  .main-container__background-section {
-    background-image: url("/pasareladepago/images/bg-main-desktop.png");
-    width: 900px;
-    height: 900px;
-  }
-}
-.card {
-  width: 288px;
-  height: 160px;
-  color: hsl(0deg, 0%, 100%);
-  padding: 20px;
-  background-image: url("/pasareladepago/images/bg-card-front.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 126px;
-  left: 18px;
-  z-index: 1;
-}
-@media (min-width: 1440px) {
-  .card {
-    top: 187px;
-    left: 167px;
-  }
-}
-
-.card-back {
-  width: 288px;
-  height: 160px;
-  color: hsl(0deg, 0%, 100%);
-  padding: 20px;
-  background-image: url("/pasareladepago/images/bg-card-back.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 30px;
-  left: 75px;
-}
-@media (min-width: 1440px) {
-  .card-back {
-    top: 468px;
-    left: 257px;
-  }
-}
-
 .main-container {
   width: 375px;
   margin: auto;
@@ -604,4 +511,4 @@ body {
   margin-top: 30px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.map */

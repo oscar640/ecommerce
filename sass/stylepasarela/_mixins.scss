@@ -11,16 +11,14 @@
         repeat: no-repeat;
         size: contain;
     };
+    @media (min-width:1440px){
+        width: 450px;
+        height: 247px;
+        padding: 38px; 
+    }
     
 }
-@media (min-width:1440px){
-    .card{
-       width: 450px;
-       height: 247;
-       padding: 38px; 
-    }
 
-}
 @mixin card-position($m-top, $m-left, $d-top, $d-left){
     position: absolute;
     top: $m-top;
@@ -28,7 +26,7 @@
     @media (min-width:1440px){
         top: $d-top;
         left: $d-left;
-}
+    }
 
 }
 

@@ -159,7 +159,7 @@ body {
   background-size: cover;
 }
 .gallery__previus {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(26deg, 100%, 55%);
   width: 40px;
   height: 40px;
   padding: 12px;
@@ -177,7 +177,7 @@ body {
   }
 }
 .gallery__next {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(26deg, 100%, 55%);
   width: 40px;
   height: 40px;
   padding: 12px;
@@ -450,7 +450,7 @@ body {
   border: 2px solid hsl(26deg, 100%, 55%);
 }
 .modal-gallery__previus {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(26deg, 100%, 55%);
   width: 40px;
   height: 40px;
   padding: 12px;
@@ -468,7 +468,7 @@ body {
   }
 }
 .modal-gallery__next {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(26deg, 100%, 55%);
   width: 40px;
   height: 40px;
   padding: 12px;
@@ -498,15 +498,7 @@ body {
   font-size: 18px;
 }
 
-@media (min-width: 1440px) {
-  .card {
-    width: 450px;
-    height: 247;
-    padding: 38px;
-  }
-}
 .main-container-pasarela {
-  border: 1px solid red;
   width: 375px;
   margin: auto;
 }
@@ -547,6 +539,14 @@ body {
   top: 126px;
   left: 18px;
   z-index: 1;
+  letter-spacing: 2px;
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 450px;
+    height: 247px;
+    padding: 38px;
+  }
 }
 @media (min-width: 1440px) {
   .card {
@@ -555,6 +555,35 @@ body {
   }
 }
 
+.card__logo {
+  width: 50px;
+  margin-bottom: 30px;
+}
+
+.card__number {
+  margin-bottom: 15px;
+}
+
+.card__details {
+  display: flex;
+  font-size: 0.6em;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1440px) {
+  .card__logo {
+    width: 86px;
+    margin-bottom: 55px;
+  }
+  .card__number {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+  .card__details {
+    font-size: 0.8em;
+  }
+}
 .card-back {
   width: 288px;
   height: 160px;
@@ -566,12 +595,135 @@ body {
   position: absolute;
   top: 30px;
   left: 75px;
+  letter-spacing: 2px;
+}
+@media (min-width: 1440px) {
+  .card-back {
+    width: 450px;
+    height: 247px;
+    padding: 38px;
+  }
 }
 @media (min-width: 1440px) {
   .card-back {
     top: 468px;
     left: 257px;
   }
+}
+.card-back .card-back__cvc {
+  font-size: 0.7em;
+  margin-top: 53px;
+  text-align: right;
+  padding-right: 18px;
+}
+@media (min-width: 1440px) {
+  .card-back .card-back__cvc {
+    font-size: 1em;
+    margin-top: 75px;
+    padding-right: 30px;
+  }
+}
+
+.form__label {
+  text-transform: uppercase;
+  font-size: 0.65em;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+  color: hsl(278deg, 68%, 11%);
+  font-weight: bold;
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding-left: 10px;
+  font-size: 1em;
+  outline: none;
+}
+.form__input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__date-cvc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+}
+.form__date {
+  display: flex;
+  gap: 10px;
+}
+.form__submit, .thanks-section__button {
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(270deg, 3%, 87%);
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.form__submit:hover, .thanks-section__button:hover {
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  .form {
+    margin-top: 180px;
+    width: 385px;
+  }
+  .form__input {
+    margin-bottom: 40px;
+  }
+}
+
+.error {
+  color: hsl(0deg, 100%, 66%);
+  margin: -10px 0 18px;
+  font-size: 0.6em;
+}
+
+.form__errors-container {
+  display: flex;
+  gap: 5px;
+}
+
+.form__errors-container div {
+  width: 100%;
+  text-align: center;
+}
+
+.thanks-section {
+  display: none;
+}
+.thanks-section__img {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.thanks-section__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: hsl(278deg, 68%, 11%);
+  margin-bottom: 24px;
+}
+.thanks-section__text {
+  text-align: center;
+  color: hsl(279deg, 6%, 55%);
+  font-size: 1.1em;
+  margin-bottom: 24px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 .main-container {

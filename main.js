@@ -42,6 +42,9 @@ addToCartBtn.addEventListener('click', ()=>{
     
 });
 
+
+
+
 //mostrar el modal con el detalle del carrito
 const cartIconBtn = document.querySelector('.header__cart');
 const cartModal = document.querySelector('.cart-modal');
@@ -55,7 +58,12 @@ document.addEventListener("click", function(event) {
 
         }
     }
-})
+});
+
+addToCartBtn.addEventListener('click', ()=>{
+    cartModal.classList.toggle('show');
+        
+});
 
 cartIconBtn.addEventListener('click', ()=>{
     cartModal.classList.toggle('show');
